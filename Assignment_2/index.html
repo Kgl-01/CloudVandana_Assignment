@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SubString-Generator</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>SUB-STRING GENERATOR</h1>
+    <div id="root">
+        <div class="form">
+        <div id="sentence">
+            <label for="text">Enter a Sentence</label><br>
+            <input class="userInput1" type="text"  required>
+        </div>
+
+        <div class="letter">
+            <label for="sentence">Enter a letter</label><br>
+            <input class="userInput2" type="text" name="letter" maxlength="1" required>
+        </div>
+
+        <div id="buttons">
+        <Button id="btn" onclick="subString()">SUBMIT</Button>
+        <button id="reset" onclick="reset()">CLEAR</button><br>
+        </div>
+
+        <div id="resultContainer"></div>
+    </div> 
+</div>   
+</body>
+</html>

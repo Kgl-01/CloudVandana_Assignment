@@ -1,0 +1,100 @@
+html{
+    background-color:#6d42c7 ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body{
+    counter-reset: Serial; /*set the Serial counter to zero*/
+}
+
+
+table, tr, td,th{
+    border-collapse: collapse;
+    text-align: center;
+}
+
+
+tr td:first-child::before  /*select the data cell which is first-child of the row*/
+{
+    counter-increment: Serial;  /*Increment the Serial counter*/
+    content: counter(Serial); /*Display the counter*/
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    background-color:#e85b48;
+    color: #fff59D;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: xxx-large;
+
+}
+
+table{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 70px;
+    height: auto;
+    border-style: none;
+    padding-top: 14vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+th{
+    padding: 10px;
+    background-color: #e85b48;
+    color: #fff59D;
+}
+
+td{
+    padding: 5px;
+    background: #8aacff;
+    font-weight: 600;
+    color: whitesmoke;
+}
+
+
+#input{
+    display: flex;
+    flex-wrap:wrap;
+    height: 110px;
+    justify-content: center;
+
+}
+
+label{
+    display: flex;
+    justify-content: center;
+    background-color: #e85b48;
+    color: #fff59D;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+}
+
+input{
+    padding: 5px;
+}
+
+#addButtons{
+    display: flex;
+    justify-content: center;
+}
+
+#addBottom,#addTop{
+    padding: 5px;
+    font-size : 15px;
+    
+    font-weight: bolder;
+    color: antiquewhite;
+    background-color:  #e85b48;
+    border-color: #fff59D;
+}
+
+
+
